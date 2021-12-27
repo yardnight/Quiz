@@ -395,9 +395,11 @@ body {
   min-width: 150px;
   margin: 1rem auto;
   font-size: 1.5rem;
-  color: #484848;
+  color: #fffefe;
+  text-shadow: 1px 0 10px #47ebda;
+  background-color: #c4c4c4d9;
   background-color: #2ec4b546 #47ebda;
-  box-shadow: inset 5px 5px 10px rgba(247, 250, 255, 0.726), inset -5px -5px 10px rgba(134, 138, 145, 0.726);
+  box-shadow: 10px 10px 20px #0df7ff25, -10px -10px 20px #ffffff81, inset 10px 10px 20px #ffffff, inset -10px -10px 20px #8f8f8fb9;
   border-radius: 1rem;
   padding: 1.2rem;
 }
@@ -471,9 +473,9 @@ h3 {
   flex-direction: column;
   background: #fff;
   border-radius: 1rem;
-  box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1rem 0.5rem #0df7ff25;
   width: auto;
-  max-width: 100%;
+  max-width: 90%;
   min-width: 60%;
   overflow: hidden;
 }
@@ -880,7 +882,8 @@ button {
 
 @media (min-width: 991.98px) {
   .title h1 {
-    margin: 1rem 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
     font-size: 2.8rem;
     line-height: 3.2rem;
   }
@@ -898,18 +901,21 @@ button {
   }
 
   .result_container {
-    height: 300px;
-    width: 800px;
+    height: 260px;
+    width: 700px;
     place-items: center center;
+    grid-template-columns: 1fr 2fr;
+    padding: 1rem;
   }
 
   .result_container .circular-progress {
-    height: 270px;
-    width: 270px;
+    height: 230px;
+    width: 230px;
+    left: 10%;
   }
 
   .result_container .value-container {
-    font-size: 5.2rem;
+    font-size: 4.2rem;
   }
 
   .quiz__header ul li {
@@ -922,7 +928,7 @@ button {
 
 @media (min-width: 1036px) {
   .title h1 {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
     font-size: 2.8rem;
     line-height: 3.2rem;
@@ -932,18 +938,18 @@ button {
     font-size: 2.3rem;
     line-height: 2.8rem;
     top: -30%;
-    right: 2%;
   }
 
   .result_container {
-    height: 300px;
-    width: 800px;
+    height: 260px;
+    width: 700px;
     place-items: center center;
   }
 
   .result_container .circular-progress {
-    height: 270px;
-    width: 270px;
+    height: 210px;
+    width: 210px;
+    left: 10%;
   }
 
   .quiz__header ul li {
